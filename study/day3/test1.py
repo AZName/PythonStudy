@@ -9,9 +9,10 @@ Copyright 2017 azhen All rights reserved.
 # 生成器只有在访问的时候才生成响应的数据
 # 只记住当前的位置
 
-from collections import Iterator
+# from collections import Iterator
 
-isinstance()
+import time
+
 c = (i * 3 for i in range(2000))
 
 
@@ -38,7 +39,8 @@ def producer(name):
     c2.__next__()
     print("开始做包子了")
     for i in range(10):
-        print("这是个工厂做包子的")
+        time.sleep(1)
+        print(f"这是个工厂做包子的{name}")
         c.send(i)
         c2.send(i)
 
