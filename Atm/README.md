@@ -7,7 +7,7 @@
 程序结构：
 
 .  
-├── Atm  
+├── Atm
 │   ├── README.md  
 │   ├── atm  
 │   │   ├── __init__.py  
@@ -24,8 +24,7 @@
 │   ├── log  
 │   │   └── __init__.py   
 │   ├── requirements.txt  
-│   └── setup.py  
-└── README.md  
+└──-└── setup.py
 
 
 
