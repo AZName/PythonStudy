@@ -6,26 +6,26 @@
 
 程序结构：
 
-.
-├── Atm
-│   ├── README.md
-│   ├── atm
-│   │   ├── __init__.py
-│   │   └── tests
-│   │       └── __init__.py
-│   ├── bin
-│   │   └── __init__.py
-│   ├── conf
-│   │   └── __init__.py
-│   ├── db
-│   │   └── __init__.py
-│   ├── docs
-│   │   └── __init__.py
-│   ├── log
-│   │   └── __init__.py
-│   ├── requirements.txt
-│   └── setup.py
-└── README.md
+.  
+├── Atm  
+│   ├── README.md  
+│   ├── atm  
+│   │   ├── __init__.py  
+│   │   └── tests  
+│   │       └── __init__.py  
+│   ├── bin  
+│   │   └── __init__.py  
+│   ├── conf  
+│   │   └── __init__.py  
+│   ├── db  
+│   │   └── __init__.py  
+│   ├── docs  
+│   │   └── __init__.py  
+│   ├── log  
+│   │   └── __init__.py   
+│   ├── requirements.txt  
+│   └── setup.py  
+└── README.md  
 
 
 
