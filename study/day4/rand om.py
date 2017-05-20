@@ -17,5 +17,12 @@ import random
 # print(random.choice("azhen"))
 
 # print(random.sample("fsfsfsdf",2))
-print(random.sample("fsfsfsdf",2))
+# a = [1, 2, 3, 4, 5]
+# print(random.shuffle(a))
+# random.shuffle(a)
+checkcode = "1234567890"
 
+
+a = random.sample(checkcode, 4)
+
+print(a)
