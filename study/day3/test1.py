@@ -33,6 +33,7 @@ def consumer(name):
 
 
 def producer(name):
+
     c = consumer("A")
     c2 = consumer("B")
     c.__next__()
