@@ -38,3 +38,19 @@ class Role(object):
 r1 = Role('Alex', 'police', 'AK47')  # 生成一个角色
 r2 = Role('Jack', 'terrorist', 'B22')  # 生成一个角色
 r1.buy_gun("ak47")
+
+
+def show():
+    print("天天不开心")
+    pass
+
+
+class Porple_row(object):
+    def __init__(self):
+        self.name = "徐振"
+        self.type = "就是不告诉你"
+
+    def test(self):
+        for a in range(18):
+            print(a, self)
+        pass
