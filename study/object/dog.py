@@ -35,5 +35,6 @@ class Role(object):
         print("just bought %s" % gun_name)
 
 
-r1 = Role('Alex', 'police', 'AK47') #生成一个角色
-r2 = Role('Jack', 'terrorist', 'B22')  #生成一个角色
+r1 = Role('Alex', 'police', 'AK47')  # 生成一个角色
+r2 = Role('Jack', 'terrorist', 'B22')  # 生成一个角色
+r1.buy_gun("ak47")
