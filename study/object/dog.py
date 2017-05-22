@@ -46,11 +46,35 @@ def show():
 
 
 class Porple_row(object):
+    age = 200  #类变量 公用属性（数据）节省开销
+
+    def __del__(self):
+        print("已经释放内存")
+
     def __init__(self):
         self.name = "徐振"
-        self.type = "就是不告诉你"
+        self.__type = "就是不告诉你"
 
     def test(self):
         for a in range(18):
             print(a, self)
+            self.__type = "我的天"
+            print(self.__type)
         pass
+
+
+por = Porple_row()
+
+por2 = Porple_row()
+
+# por.age = 190
+
+
+print(Porple_row.age)
+Porple_row.age = 190
+print(por)
+por.test()
+
+del por
+
+
