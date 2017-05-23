@@ -129,6 +129,7 @@ class SchoolMember(object):
 
 # 教师
 class Teacher(SchoolMember):
+
     def __init__(self, name, sex, age, coure, grades):
         """
         创建教师
@@ -177,3 +178,4 @@ class Students(SchoolMember):
 sch_bj = School("北京")
 sch_sh = School("上海")
 
+print(School.__doc__)
