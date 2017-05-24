@@ -11,10 +11,14 @@ class Dog:
     def egt(self):
         print(self, "汪汪汪汪汪汪汪汪")
 
+    def __str__(self):
+        return "xuzhen"
 
 d1 = Dog()
 
-d1.egt()
+# d1.egt()
+
+d1.__str__()
 
 
 class Role(object):

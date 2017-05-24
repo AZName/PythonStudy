@@ -178,4 +178,4 @@ class Students(SchoolMember):
 sch_bj = School("北京")
 sch_sh = School("上海")
 
-print(School.__doc__)
+print(sch_bj.__dict__)
