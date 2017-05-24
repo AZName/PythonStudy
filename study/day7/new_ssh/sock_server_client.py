@@ -3,6 +3,7 @@ import socket
 client = socket.socket()
 
 #client.connect(('192.168.16.200',9999))
+
 client.connect(('localhost',9999))
 
 while True:
@@ -19,7 +20,7 @@ while True:
         #print(data.decode())
         received_data += data
     else:
-        print("cmd res receive done...",received_size)
+        print("cmd res receive done...", received_size)
         print(received_data.decode())
 
 
