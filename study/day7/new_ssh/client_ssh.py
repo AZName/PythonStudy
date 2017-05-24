@@ -20,20 +20,24 @@ while True:
     if not len(cmd): continue
 
     client.send(cmd.encode("utf-8"))
-    # data_size = int(client.recv(1024).decode())
+
     data_size = client.recv(1024).decode()
-    print(data_size)
+    client.send(b"1")
     data = b""
-    # print(data_size)
-    # while data_size > 0:
-    #
-    #     tmp = client.recv(1024)
-    #
-    #     data_size -= len(tmp)
-    #
-    #     data += tmp
-    #
-    # else:
-    #     print(f"输出{data.decode()}")
+
+    data_size = int(data_size)
+
+    print(data_size)
+
+    while data_size > 0:
+
+        tmp = client.recv(1024)
+
+        data_size -= len(tmp)
+
+        data += tmp
+
+    else:
+        print(f"输出{data.decode()}")
 
 client.close()

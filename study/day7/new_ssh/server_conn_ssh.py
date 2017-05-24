@@ -33,10 +33,12 @@ while True:
         if not cmd_res:
             cmd_res = "输入命令有误"
 
-        data_size = str(len(cmd_res.encode("utf-8")))
+        cmd_res = cmd_res.encode("utf-8")
+        data_size = str(len(cmd_res)).encode("utf-8")
         print("返回数据大小", data_size)
-        conn.send(data_size.encode("utf-8"))
-        conn.send(cmd_res.encode("utf-8"))
+        conn.send(data_size)
+        conn.recv(1024)
+        conn.send(cmd_res)
         print("发送结束", cmd_res)
     else:
         pass
