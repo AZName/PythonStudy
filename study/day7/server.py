@@ -17,6 +17,7 @@ server.listen()
 conn, addr = server.accept()
 
 data = conn.recv(1024)
+print(data.decode())
 
 conn.send(data.upper())
 
