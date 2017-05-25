@@ -11,7 +11,7 @@ name2 = ["baidu","tengxun"]
 names.append("ofo")
 # 合并
 # names.extend(name2)
-# 含有多少个值
+# 值所在的位置
 # names.count("xiaoming")
 # print(names.count("xiaoming"))
 # 在那个位子
