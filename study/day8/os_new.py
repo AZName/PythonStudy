@@ -9,17 +9,17 @@ Copyright 2017 azhen All rights reserved.
 import os
 
 
-print(os.listdir())
+print(os.getcwd())
 
 while True:
-    msg = input(">>:").rstrip("-")
+    msg = input(">>:").rstrip()
     print(msg.strip())
-    if "cd " in msg:
+    if ".." in msg:
         print(os.getcwd())
-        os.chdir("cd ../")
+        os.chdir(os.pardir())
         print(os.getcwd())
-    else:
-
-        data = os.popen(msg).read()
-        print(data)
+    # else:
+    #
+    #     data = os.popen(msg).read()
+    #     print(data)
 
