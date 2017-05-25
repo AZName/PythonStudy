@@ -8,3 +8,5 @@ Copyright 2017 azhen All rights reserved.
 
 # dict
 
+dic = dict(name="xuzhen", age=24)
+print(dic.get("sex"))

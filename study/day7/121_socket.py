@@ -11,12 +11,13 @@ import socket
 client = socket.socket()
 
 
-client.connect(("localhost", 5656))
+client.connect(("localhost", 9999))
 
-client.send(b"hello word")
+while True:
+    msg = input(">>:")
+    client.send(msg.encode())
 
-
-print(client.recv(1024111))
+    print(client.recv(1024).decode())
 
 client.close()
 
