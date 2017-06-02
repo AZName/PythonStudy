@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="871f0293-0b60-4341-b891-b9527bdb05c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/day11/index.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/day11/select_1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study/day11/index.xhtml" afterPath="$PROJECT_DIR$/study/day11/index.xhtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -473,6 +472,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="871f0293-0b60-4341-b891-b9527bdb05c8" name="Default" comment="" />
@@ -516,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496213310291</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="web 开发">
+      <created>1496306343714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496306343714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -581,7 +590,8 @@
     <MESSAGE value="10" />
     <MESSAGE value="玩去了" />
     <MESSAGE value="第十一天" />
-    <option name="LAST_COMMIT_MESSAGE" value="第十一天" />
+    <MESSAGE value="web 开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="web 开发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
