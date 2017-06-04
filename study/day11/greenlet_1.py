@@ -24,6 +24,6 @@ def test2():
     print(78)
 
 
-gr1 = greenlet(test1) # 生成 并执行
-gr2 = greenlet(test2) # 生成 并执行
+gr1 = greenlet(test1)  # 生成 并执行
+gr2 = greenlet(test2)  # 生成 并执行
 gr1.switch()
