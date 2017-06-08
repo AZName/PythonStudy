@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            width: 100px;
+            min-height: 1000px;
+            background-color: yellow;
+            line-height: 48px;
+        }
+        .menu_item .header {
+            height: 48px;
+            text-align: center;
+            background-color: green;
+        }
+        .hidden{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="c1">
+        <div class="menu_item">
+            <div class="header"> 菜单一</div>
+            <div class="content">内容2</div>
+            <div class="content">内容3</div>
+            <div class="content">内容4</div>
+            <div class="content">内容5</div>
+            <div class="content">内容6</div>
+        </div>
+        <div class="menu_item">
+            <div class="header"> 菜单二</div>
+            <div class="content">内容2</div>
+            <div class="content">内容3</div>
+            <div class="content">内容4</div>
+            <div class="content">内容5</div>
+            <div class="content">内容6</div>
+        </div>
+        <div class="menu_item">
+            <div class="header"> 菜单三</div>
+            <div class="content">内容2</div>
+            <div class="content">内容3</div>
+            <div class="content">内容4</div>
+            <div class="content">内容5</div>
+            <div class="content">内容6</div>
+        </div>
+        <div class="menu_item">
+            <div class="header"> 菜单四</div>
+            <div class="content">内容2</div>
+            <div class="content">内容3</div>
+            <div class="content">内容4</div>
+            <div class="content">内容5</div>
+            <div class="content">内容6</div>
+        </div>
+    </div>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(".header").click(function () {
+            //隐藏其他标签的内容
+            $(this).parent().siblings().find(".content").addClass("hidden");
+            //显示当前子标签的内容
+            $(this).siblings().removeClass("hidden");
+        })
+    </script>
+
+</body>
+</html>

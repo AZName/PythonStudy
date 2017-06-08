@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="全选"/>
+    <input type="button" value="取消"/>
+    <input type="button" value="反选"/>
+    <table>
+        <thead>
+            <tr>
+                <th>全部</th>
+                <th>地址</th>
+                <th>端口</th>
+            </tr>
+        </thead>
+
+
+        <tbody id="i1">
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>1.1.1.1</td>
+                <td>8080</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>1.1.1.1</td>
+                <td>8080</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>1.1.1.1</td>
+                <td>8080</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+<script>
+    $("[value]").click(function () {
+        if(this.value == '全选'){
+                $("#i1 [type = checkbox]").prop("checked",true);
+            }else if (this.value == '取消'){
+                $("#i1 [type = checkbox]").prop("checked",false);
+            }else if (this.value == '反选'){
+                $("#i1 [type = checkbox]").each(function () {
+                    this.checked = !this.checked;
+                })
+            }
+    })
+
+//    $("[value]").each(function () {
+//        this.onclick = function () {
+//            if(this.value == '全选'){
+//                $("#i1 [type = checkbox]").prop("checked",true);
+//            }else if (this.value == '取消'){
+//                $("#i1 [type = checkbox]").prop("checked",false);
+//            }else if (this.value == '反选'){
+//                $("#i1 [type = checkbox]").each(function () {
+//                    this.checked = !this.checked;
+//                })
+//            }
+//        }
+//    })
+</script>
+</body>
+</html>
