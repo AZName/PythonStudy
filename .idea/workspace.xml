@@ -155,6 +155,7 @@
         <option value="$PROJECT_DIR$/study/day14/s1.html" />
         <option value="$PROJECT_DIR$/study/day14/s2.py" />
         <option value="$PROJECT_DIR$/study/day15/django_1.py" />
+        <option value="$PROJECT_DIR$/study/day16/s2/s2/urls.py" />
       </list>
     </option>
   </component>
@@ -730,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497346244331</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="web 开发">
+      <created>1497346257240</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1497346257240</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
